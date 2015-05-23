@@ -6,15 +6,17 @@
 # ==================================================================
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 #
+# May 23, 2015
+#
 
 #setwd("D:\\WORK\\MOOC-GetCleanData")
 #rmall <- function() rm(list=ls(envir=globalenv()), envir=globalenv()); rmall()
 
 library(reshape)
-library(dplyr)
+library(dplyr)   # declare this one last
 
 ## constants
-MEMOIZE <- TRUE
+MEMOIZE <- FALSE
 URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 DATA_DIR <- "."
 #DATA_DIR <- ".\\data"
@@ -56,7 +58,7 @@ GetZipFile <- function(url, lfn)
 		unzip(zipFile, exdir=DATA_DIR , junkpaths=TRUE)
 	}
 
-	NULL
+	return(TRUE)
 }
 
 

@@ -1,6 +1,8 @@
 # Getting and Cleaning Data - Course Project
 
-May 22, 2015
+May 23, 2015
+
+*Based on experiments published in [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)*
 
 ## Introduction
 
@@ -12,7 +14,7 @@ The Course Project involves reading and manipulating a large dataset.  The goal 
 
 When data is in tidy format the meaning of the data is clear, and the data is easy to manipulate with modern programming languages.  Tidy Data is described in Hadley Wickham's journal article of the same name (http://www.jstatsoft.org/v59/i10/paper).
 
-Our messy data comes from an experiment entitled *Human Activity Recognition Using Smartphones* (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+Our messy data comes from an experiment entitled [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 Briefly, these experiments involved 30 volunteers (aka subjects) performing 6 activities (WALKING, SITTING, STANDING, etc) while wearing a smartphone. The goal of the experiments is to see if the smartphone's built-in accelerometer and gyroscope can provide datapoints sufficient to predict the subject's activity.  This is a classic machine learning experiment where the raw data is massaged by various transformations into a series of candidate features.  561 of them!  The dataset is then randomly partitioned into 2 sets.  The first set is used to train a predictive model.  When the parameters of the predictive model are optimized, the second set is used to validate, or test, the model.  How well does the model predict the correct answer when presented with the second, and previously unseen, set of data?
 

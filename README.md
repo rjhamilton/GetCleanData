@@ -112,5 +112,3 @@ The 561 feature names enumerated in features.txt contain hyphens, parentheses, a
     
     feature.dim <- LoadTxtFile(lfn="features.txt", col.names=c("featureId", "descr"))
     feature.dim <- mutate(feature.dim, descr=NormalizeToken(descr))
-    
-
